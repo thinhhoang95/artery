@@ -16,7 +16,7 @@
 // Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 //
 
-#include "artery/application/ItsG5Service.h"
+#include "artery/application/ItsG5BaseService.h"
 #include "artery/application/Middleware.h"
 #include <inet/common/ModuleAccess.h>
 #include <omnetpp/clog.h>

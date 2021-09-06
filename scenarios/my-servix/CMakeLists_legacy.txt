@@ -1,0 +1,12 @@
+add_artery_feature(mysimu ClearLaneService.cc PoliceService.cc)
+generate_opp_message(PoliceClearLane.msg TARGET mysimu DIRECTORY police_msgs)
+add_opp_run(my_simu NED_FOLDERS ${CMAKE_CURRENT_SOURCE_DIR})
+
+if(WITH_STORYBOARD)
+    target_sources(mysimu PUBLIC PoliceServiceStoryboard.cc)
+endif()
+
+if(WITH_ENVMOD)
+    target_sources(mysimu PUBLIC PoliceServiceEnvmod.cc)
+    target_link_libraries(mysimu PUBLIC envmod)
+endif()

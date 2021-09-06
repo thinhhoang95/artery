@@ -1,0 +1,1 @@
+add_opp_run(my_simu NED_FOLDERS ${CMAKE_CURRENT_SOURCE_DIR})

@@ -17,6 +17,7 @@
 //
 
 #include "ItsG5Service.h"
+#include "ItsG5BaseService.h"
 #include "cpacket_byte_buffer_convertible.h"
 #include <boost/variant/static_visitor.hpp>
 

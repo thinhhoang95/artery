@@ -1,6 +1,8 @@
 add_subdirectory(artery)
 add_subdirectory(gemv2)
-add_subdirectory(highway-police)
+add_subdirectory(my-simu)
+add_subdirectory(my-servix)
+
 if(WITH_ENVMOD)
     add_subdirectory(rsu_grid)
 endif()
